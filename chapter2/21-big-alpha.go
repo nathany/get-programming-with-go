@@ -7,10 +7,10 @@ func main() {
 	const secondsPerDay = 86400
 
 	// Alpha Centauri is 41.3 trillion kilometers away
-	var km int64 = 41.3e12
-	fmt.Println("Alpha Centauri is", km, "km away.") //#A
+	var distance int64 = 41.3e12
+	fmt.Println("Alpha Centauri is", distance, "km away.") //#A
 
-	days := km / lightSpeed / secondsPerDay
+	days := distance / lightSpeed / secondsPerDay
 	fmt.Println("That is", days, "days of travel at light speed.") //#B
 }
 

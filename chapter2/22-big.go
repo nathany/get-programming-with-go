@@ -9,12 +9,12 @@ func main() {
 	lightSpeed := big.NewInt(299792) // km/s
 	secondsPerDay := big.NewInt(86400)
 
-	km := new(big.Int)
-	km.SetString("24000000000000000000", 10)
-	fmt.Println("Andromeda Galaxy is", km, "km away.") //#A
+	distance := new(big.Int)
+	distance.SetString("24000000000000000000", 10)
+	fmt.Println("Andromeda Galaxy is", distance, "km away.") //#A
 
 	seconds := new(big.Int)
-	seconds.Div(km, lightSpeed)
+	seconds.Div(distance, lightSpeed)
 
 	days := new(big.Int)
 	days.Div(seconds, secondsPerDay)
