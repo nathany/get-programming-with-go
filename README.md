@@ -1,4 +1,3 @@
 # Learn Go
 
-Example code for Learn Go.
-
+Try out these examples in [The Go Playground](https://play.golang.org/).
