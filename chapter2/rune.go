@@ -3,19 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
 	var happy rune = 128515
 	var sad rune = 128546
 	var bang byte = 33
 
-	fmt.Println(happy, sad, bang) //<1>
-	// end::main[]
+	fmt.Println(happy, sad, bang)
 
-	// tag::string[]
-	fmt.Println(string(happy), string(sad), string(bang)) //<1>
-	// end::string[]
+	fmt.Println(string(happy), string(sad), string(bang))
 
-	// tag::verb[]
-	fmt.Printf("%c %c %c\n", happy, sad, bang) //<1>
-	// end::verb[]
+	fmt.Printf("%c %c %c\n", happy, sad, bang)
 }

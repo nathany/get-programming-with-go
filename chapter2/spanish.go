@@ -8,9 +8,9 @@ import (
 func main() {
 	question := "¿Cómo estás?"
 
-	fmt.Println(len(question), "bytes")                    //<1>
-	fmt.Println(utf8.RuneCountInString(question), "runes") //<2>
+	fmt.Println(len(question), "bytes")
+	fmt.Println(utf8.RuneCountInString(question), "runes")
 
 	c, size := utf8.DecodeRuneInString(question)
-	fmt.Printf("First rune: %c %v bytes", c, size) //<3>
+	fmt.Printf("First rune: %c %v bytes", c, size)
 }

@@ -6,20 +6,16 @@ import (
 )
 
 func main() {
-	// tag::infer[]
 	boardingPass := "InSight Mission to Mars"
-	mars := strings.Contains(boardingPass, "Mars") //<1>
+	mars := strings.Contains(boardingPass, "Mars")
 
 	if mars {
-		fmt.Printf("Boarding pass: %v\n", boardingPass) //<2>
+		fmt.Printf("Boarding pass: %v\n", boardingPass)
 	}
-	// end::infer[]
 
-	// tag::direct[]
 	if strings.Contains(boardingPass, "Mars") {
 		fmt.Printf("Mars: %v", boardingPass)
 	} else {
 		fmt.Printf("Not Mars: %v", boardingPass)
 	}
-	// end::direct[]
 }

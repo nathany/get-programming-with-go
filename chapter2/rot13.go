@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
 	message := "uv vagreangvbany fcnpr fgngvba"
 
-	for i := 0; i < len(message); i++ { //<1>
+	for i := 0; i < len(message); i++ {
 		c := message[i]
-		if c >= 'a' && c <= 'z' { //<2>
+		if c >= 'a' && c <= 'z' {
 			c = c + 13
 			if c > 'z' {
 				c = c - 26
@@ -16,5 +15,4 @@ func main() {
 		}
 		fmt.Printf("%c", c)
 	}
-	// end::main[]
 }

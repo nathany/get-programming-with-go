@@ -6,13 +6,13 @@ import (
 )
 
 func main() {
-	var num = rand.Intn(3) //<1>
+	var num = rand.Intn(3)
 
-	if num == 0 { //<2>
+	if num == 0 {
 		fmt.Println("Space Adventures")
-	} else if num == 1 { //<3>
+	} else if num == 1 {
 		fmt.Println("SpaceX")
-	} else { //<4>
+	} else {
 		fmt.Println("Virgin Galactic")
 	}
 }

@@ -11,7 +11,7 @@ func main() {
 
 	distance := new(big.Int)
 	distance.SetString("24000000000000000000", 10)
-	fmt.Println("Andromeda Galaxy is", distance, "km away.") //<1>
+	fmt.Println("Andromeda Galaxy is", distance, "km away.")
 
 	seconds := new(big.Int)
 	seconds.Div(distance, lightSpeed)
@@ -19,5 +19,5 @@ func main() {
 	days := new(big.Int)
 	days.Div(seconds, secondsPerDay)
 
-	fmt.Println("That is", days, "days of travel at light speed.") //<2>
+	fmt.Println("That is", days, "days of travel at light speed.")
 }
