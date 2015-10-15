@@ -4,6 +4,8 @@ Available from Manning Publications https://www.manning.com/books/learn-go.
 
 Try out these examples in [The Go Playground](https://play.golang.org/).
 
+If you downloaded this code from the Manning website, you can browse the latest version online at: https://github.com/nathany/learngo
+
 ### Contents
 
 1. Introduction
