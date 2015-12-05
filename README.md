@@ -20,8 +20,6 @@ If you downloaded this code from the Manning website, you can browse the latest 
 
 A. Installing Go
 
-B. Solutions
-
 ### Contributing
 
 Feel free to open an issue or ask questions on the Manning Forums https://forums.manning.com/forums/learn-go.
