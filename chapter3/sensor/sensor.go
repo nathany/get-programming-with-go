@@ -12,11 +12,11 @@ func fakeSensor() Kelvin {
 }
 
 func realSensor() Kelvin {
-	return 0 //<1>
+	return 0
 }
 
 func main() {
-	sensor := fakeSensor //<2>
+	sensor := fakeSensor
 	fmt.Println(sensor())
 
 	sensor = realSensor

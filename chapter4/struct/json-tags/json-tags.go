@@ -7,10 +7,9 @@ import (
 )
 
 func main() {
-	// tag::main[]
 	type point struct {
-		Lat  float64 `json:"latitude"`  //<1>
-		Long float64 `json:"longitude"` //<1>
+		Lat  float64 `json:"latitude"`
+		Long float64 `json:"longitude"`
 	}
 
 	curiosity := point{-4.5895, 137.4417}
@@ -18,8 +17,7 @@ func main() {
 	bytes, err := json.Marshal(curiosity)
 	exitOnError(err)
 
-	fmt.Println(string(bytes)) //<2>
-	// end::main[]
+	fmt.Println(string(bytes))
 }
 
 // exitOnError prints any errors and exits

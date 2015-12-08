@@ -10,5 +10,5 @@ func (slice StringSlice) dump(label string) {
 
 func main() {
 	dwarfs := StringSlice{"Ceres", "Pluto", "Haumea"}
-	dwarfs.dump("dwarfs") //<1>
+	dwarfs.dump("dwarfs")
 }

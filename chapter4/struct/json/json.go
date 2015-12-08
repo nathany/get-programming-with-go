@@ -8,7 +8,7 @@ import (
 
 func main() {
 	type point struct {
-		Lat, Long float64 //<1>
+		Lat, Long float64
 	}
 
 	curiosity := point{-4.5895, 137.4417}
@@ -16,7 +16,7 @@ func main() {
 	bytes, err := json.Marshal(curiosity)
 	exitOnError(err)
 
-	fmt.Println(string(bytes)) //<2>
+	fmt.Println(string(bytes))
 }
 
 // exitOnError prints any errors and exits.

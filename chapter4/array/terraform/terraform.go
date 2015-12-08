@@ -22,5 +22,5 @@ func main() {
 	}
 
 	terraform(planets)
-	fmt.Println(planets) //<1>
+	fmt.Println(planets)
 }

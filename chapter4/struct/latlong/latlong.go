@@ -3,10 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
-	lat := -4.5895   //<1>
-	long := 137.4417 //<2>
-	// end::main[]
+	lat := -4.5895
+	long := 137.4417
 
 	fmt.Println(lat, long)
 }

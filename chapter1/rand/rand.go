@@ -1,8 +1,8 @@
 package main
 
-import ( //<1>
+import (
 	"fmt"
-	"math/rand" //<2>
+	"math/rand"
 )
 
 func main() {

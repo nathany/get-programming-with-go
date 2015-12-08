@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
-	planets := [...]string{ //<1>
+	planets := [...]string{
 		"Mercury",
 		"Venus",
 		"Earth",
@@ -12,9 +11,8 @@ func main() {
 		"Jupiter",
 		"Saturn",
 		"Uranus",
-		"Neptune", //<2>
+		"Neptune",
 	}
-	// end::main[]
 
 	fmt.Println(planets)
 	fmt.Println(len(planets))

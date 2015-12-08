@@ -13,7 +13,6 @@ type coordinate struct {
 	h       rune
 }
 
-// tag::main[]
 // newPoint from latitude, longitude d/m/s coordinates.
 func newPoint(lat, long coordinate) point {
 	return point{lat.decimal(), long.decimal()}
@@ -33,5 +32,3 @@ func main() {
 	curiosity := newPoint(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
 	fmt.Println(curiosity)
 }
-
-// end::main[]

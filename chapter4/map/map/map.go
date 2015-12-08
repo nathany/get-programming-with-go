@@ -3,35 +3,27 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
 	temperature := map[string]int{
-		"Earth": 15, // <1>
+		"Earth": 15,
 		"Mars":  -65,
 	}
 
 	temp := temperature["Earth"]
-	fmt.Printf("On average the Earth is %vºC.\n", temp) //<2>
+	fmt.Printf("On average the Earth is %vºC.\n", temp)
 
-	temperature["Earth"] = 16 //<3>
+	temperature["Earth"] = 16
 	temperature["Venus"] = 464
 
-	fmt.Println(temperature) //<4>
-	// end::main[]
+	fmt.Println(temperature)
+	fmt.Println(temperature["Moon"])
 
-	// tag::moon[]
-	fmt.Println(temperature["Moon"]) //<1>
-
-	if temp, ok := temperature["Moon"]; ok { // <2>
+	if temp, ok := temperature["Moon"]; ok {
 		fmt.Printf("On average the moon is %vºC.\n", temp)
 	} else {
-		fmt.Println("Where is the moon?") //<3>
+		fmt.Println("Where is the moon?")
 	}
-	// end::moon[]
-
-	// tag::delete[]
 	_, ok := temperature["Earth"]
-	fmt.Println(ok) //<1>
+	fmt.Println(ok)
 
-	delete(temperature, "Earth") //<2>
-	// end::delete[]
+	delete(temperature, "Earth")
 }

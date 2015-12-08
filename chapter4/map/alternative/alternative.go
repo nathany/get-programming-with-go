@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
 	// Weather data from Curiosity
 	type Weather struct {
 		sol              int
@@ -21,7 +20,6 @@ func main() {
 		pressure:  7.4,
 		windSpeed: 2.0,
 	}
-	// end::main[]
 
 	fmt.Printf("%+v", weather)
 }

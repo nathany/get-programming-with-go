@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-// tag::main[]
 func radiusMap(planet string) float64 {
 	r := map[string]float64{
 		"Earth": 6371.0,
@@ -21,8 +20,6 @@ func radiusSwitch(planet string) float64 {
 		return 0.0
 	}
 }
-
-// end::main[]
 
 func main() {
 	fmt.Println(radiusMap("Earth"))

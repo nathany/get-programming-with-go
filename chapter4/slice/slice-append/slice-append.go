@@ -7,19 +7,14 @@ func dump(label string, slice []string) {
 }
 
 func main() {
-	// tag::append[]
-	dwarfs1 := []string{"Ceres", "Pluto", "Haumea", "Makemake", "Eris"} //<1>
-	dwarfs2 := append(dwarfs1, "Orcus")                                 //<2>
-	dwarfs3 := append(dwarfs2, "Salacia", "Quaoar", "Sedna")            //<3>
-	// end::append[]
+	dwarfs1 := []string{"Ceres", "Pluto", "Haumea", "Makemake", "Eris"}
+	dwarfs2 := append(dwarfs1, "Orcus")
+	dwarfs3 := append(dwarfs2, "Salacia", "Quaoar", "Sedna")
 
 	dump("dwarfs1", dwarfs1)
 	dump("dwarfs2", dwarfs2)
 	dump("dwarfs3", dwarfs3)
-
-	// tag::mutate[]
-	dwarfs3[1] = "Pluto!" //<1>
-	// end::mutate[]
+	dwarfs3[1] = "Pluto!"
 
 	dump("dwarfs1", dwarfs1)
 	dump("dwarfs2", dwarfs2)

@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	// weather data from Curiosity Rover
-	// tag::main[]
 	weather := map[string]float64{
 		"sol":        16,
 		"ls":         159.0,
@@ -13,7 +12,6 @@ func main() {
 		"pressure":   7.4,
 		"wind_speed": 2.0,
 	}
-	// end::main[]
 
 	fmt.Println(weather)
 }

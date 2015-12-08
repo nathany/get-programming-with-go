@@ -9,6 +9,6 @@ func dump(label string, slice []string) {
 
 func main() {
 	dwarfs := []string{"Ceres", "Pluto", "Haumea", "Makemake", "Eris"}
-	dump("dwarfs", dwarfs)           //<1>
-	dump("dwarfs[1:2]", dwarfs[1:2]) //<2>
+	dump("dwarfs", dwarfs)
+	dump("dwarfs[1:2]", dwarfs[1:2])
 }

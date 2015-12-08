@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// tag::main[]
 	switch rand.Intn(3) {
 	case 0:
 		fmt.Println("Space Adventures")
@@ -17,5 +16,4 @@ func main() {
 	default:
 		fmt.Println("This was not foreseen")
 	}
-	// end::main[]
 }

@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// tag::main[]
 	switch speed := rand.Intn(15) + 16; speed {
 	case 16:
 		fmt.Printf("Slow going at %v km/s\n", speed)
@@ -15,5 +14,4 @@ func main() {
 	default:
 		fmt.Println(speed, "km/s")
 	}
-	// end::main[]
 }

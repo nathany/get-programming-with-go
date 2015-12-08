@@ -6,10 +6,10 @@ type Kelvin float64
 type Sensor func() Kelvin
 
 func realSensor() Kelvin {
-	return 0 //<1>
+	return 0
 }
 
-func calibrate(sensor Sensor, offset Kelvin) Sensor { //<2>
+func calibrate(sensor Sensor, offset Kelvin) Sensor {
 	return func() Kelvin {
 		return sensor() + offset
 	}
@@ -17,5 +17,5 @@ func calibrate(sensor Sensor, offset Kelvin) Sensor { //<2>
 
 func main() {
 	sensor := calibrate(realSensor, 5)
-	fmt.Println(sensor()) //<3>
+	fmt.Println(sensor())
 }

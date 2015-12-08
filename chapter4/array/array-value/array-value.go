@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// tag::main[]
 	planets := [...]string{
 		"Mercury",
 		"Venus",
@@ -15,11 +14,10 @@ func main() {
 		"Neptune",
 	}
 
-	planetsMarkII := planets //<1>
+	planetsMarkII := planets
 
-	planets[2] = "💥" //<2>
+	planets[2] = "💥"
 
-	fmt.Println(planets)       //<3>
-	fmt.Println(planetsMarkII) //<4>
-	// end::main[]
+	fmt.Println(planets)
+	fmt.Println(planetsMarkII)
 }

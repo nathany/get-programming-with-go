@@ -8,7 +8,7 @@ import (
 
 type Kelvin float64
 
-func measureTemperature(samples int, sensor func() Kelvin) { //<1>
+func measureTemperature(samples int, sensor func() Kelvin) {
 	for i := 0; i < samples; i++ {
 		k := sensor()
 		fmt.Printf("%vºK\n", k)
@@ -21,5 +21,5 @@ func fakeSensor() Kelvin {
 }
 
 func main() {
-	measureTemperature(3, fakeSensor) //<2>
+	measureTemperature(3, fakeSensor)
 }

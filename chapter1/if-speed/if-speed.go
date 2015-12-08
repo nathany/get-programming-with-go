@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// tag::main[]
 	var speed = rand.Intn(15) + 16
 
 	if speed == 16 {
@@ -14,5 +13,4 @@ func main() {
 	} else {
 		fmt.Println(speed, "km/s")
 	}
-	// end::main[]
 }
