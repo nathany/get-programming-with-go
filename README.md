@@ -1,6 +1,6 @@
 # Learn Go
 
-Available from Manning Publications https://www.manning.com/books/learn-go.
+Available from Manning Publications [https://www.manning.com/books/learn-go](https://manning.com/books/learn-go?a_aid=nathany&a_bid=53f68821).
 
 Try out these examples in [The Go Playground](https://play.golang.org/).
 
