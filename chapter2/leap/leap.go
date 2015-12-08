@@ -7,6 +7,6 @@ func main() {
 	leap := year%400 == 0 || (year%4 == 0 && year%100 != 0)
 
 	if leap {
-		fmt.Println("Leap for joy!")
+		fmt.Println("Keep on leaping!")
 	}
 }

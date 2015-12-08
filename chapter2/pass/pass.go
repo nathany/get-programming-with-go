@@ -12,7 +12,6 @@ func main() {
 	if mars {
 		fmt.Printf("Boarding pass: %v\n", boardingPass)
 	}
-
 	if strings.Contains(boardingPass, "Mars") {
 		fmt.Printf("Mars: %v", boardingPass)
 	} else {
