@@ -13,5 +13,5 @@ func main() {
 		time.Sleep(time.Second)
 		count = count - 1
 	}
-	fmt.Println("Liftoff")
+	fmt.Println("Liftoff!")
 }
