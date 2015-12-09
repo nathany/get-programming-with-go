@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	Width  = 80
-	Height = 15
+	width  = 80
+	height = 15
 )
 
 // Universe is a two-dimensional field of cells.
@@ -16,17 +16,17 @@ type Universe [][]bool
 
 // NewUniverse returns an empty universe.
 func NewUniverse() Universe {
-	u := make(Universe, Height)
+	u := make(Universe, height)
 	for i := range u {
-		u[i] = make([]bool, Width)
+		u[i] = make([]bool, width)
 	}
 	return u
 }
 
 // Seed random live cells into the universe.
 func (u Universe) Seed() {
-	for i := 0; i < (Width * Height / 4); i++ {
-		u.Set(rand.Intn(Width), rand.Intn(Height), true)
+	for i := 0; i < (width * height / 4); i++ {
+		u.Set(rand.Intn(width), rand.Intn(height), true)
 	}
 }
 
@@ -38,8 +38,8 @@ func (u Universe) Set(x, y int, b bool) {
 // Alive reports whether the specified cell is alive.
 // If the coordinates are outside of the universe, they wrap around.
 func (u Universe) Alive(x, y int) bool {
-	x = (x + Width) % Width
-	y = (y + Height) % Height
+	x = (x + width) % width
+	y = (y + height) % height
 	return u[y][x]
 }
 
@@ -65,10 +65,10 @@ func (u Universe) Next(x, y int) bool {
 // String returns the universe as a string.
 func (u Universe) String() string {
 	var b byte
-	buf := make([]byte, 0, (Width+1)*Height)
+	buf := make([]byte, 0, (width+1)*height)
 
-	for y := 0; y < Height; y++ {
-		for x := 0; x < Width; x++ {
+	for y := 0; y < height; y++ {
+		for x := 0; x < width; x++ {
 			b = ' '
 			if u[y][x] {
 				b = '*'
@@ -89,8 +89,8 @@ func (u Universe) Show() {
 // Step updates the state of the next universe (b) from
 // the current universe (a).
 func Step(a, b Universe) {
-	for y := 0; y < Height; y++ {
-		for x := 0; x < Width; x++ {
+	for y := 0; y < height; y++ {
+		for x := 0; x < width; x++ {
 			b.Set(x, y, a.Next(x, y))
 		}
 	}

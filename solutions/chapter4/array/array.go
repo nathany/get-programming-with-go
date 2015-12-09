@@ -1,7 +1,6 @@
 package main
 
 func main() {
-	// tag::main[]
 	var planets [8]string
 
 	planets[0] = "Mercury"
@@ -12,5 +11,4 @@ func main() {
 	planets[5] = "Saturn"
 	planets[6] = "Uranus"
 	planets[7] = "Neptune"
-	// end::main[]
 }
