@@ -17,7 +17,7 @@ func main() {
 	type dataPoint struct {
 		Sol         int     `json:"sol"`
 		Location    point   `json:"location"`
-		Temperature Celsius `json:"temperature""`
+		Temperature Celsius `json:"temperature"`
 	}
 
 	curiosity := point{-4.5895, 137.4417}
