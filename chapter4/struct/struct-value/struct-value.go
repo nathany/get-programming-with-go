@@ -10,7 +10,7 @@ func main() {
 	bradbury := point{-4.5895, 137.4417}
 	curiosity := bradbury
 
-	curiosity.long += 0.01
+	curiosity.long += 0.0106
 
 	fmt.Println(bradbury, curiosity)
 }

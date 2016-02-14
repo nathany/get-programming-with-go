@@ -15,10 +15,10 @@ func main() {
 	temperature["Venus"] = 464
 
 	fmt.Println(temperature)
-	fmt.Println(temperature["Moon"])
-
-	if temp, ok := temperature["Moon"]; ok {
-		fmt.Printf("On average the moon is %vºC.\n", temp)
+	moon := temperature["Moon"]
+	fmt.Println(moon)
+	if moon, ok := temperature["Moon"]; ok {
+		fmt.Printf("On average the moon is %vºC.\n", moon)
 	} else {
 		fmt.Println("Where is the moon?")
 	}
