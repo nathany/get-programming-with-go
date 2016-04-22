@@ -8,10 +8,6 @@ Try out these examples in [The Go Playground](https://play.golang.org/).
 
 If you downloaded this code from the Manning website, you can browse the latest version online at: https://github.com/gopherbook/learn-go-code
 
-### Solutions
-
-The `solutions/` folder contains my own solutions to exercises throughout the book. Keep in mind that there is often more than one solution for any problem.
-
 ### Contributing
 
 Feel free to open an issue or ask questions on the Manning Forums https://forums.manning.com/forums/learn-go.
