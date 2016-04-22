@@ -8,20 +8,6 @@ Try out these examples in [The Go Playground](https://play.golang.org/).
 
 If you downloaded this code from the Manning website, you can browse the latest version online at: https://github.com/gopherbook/learn-go-code
 
-### Contents
-
-1. Introduction
-2. Types
-3. Functions and methods
-4. Collections
-5. Pointers
-6. Concurrency
-7. State and behavior
-8. Packages
-9. Test driven development
-
-A. Installing Go
-
 ### Solutions
 
 The `solutions/` folder contains my own solutions to exercises throughout the book. Keep in mind that there is often more than one solution for any problem.
