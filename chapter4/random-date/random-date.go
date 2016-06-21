@@ -10,15 +10,15 @@ var era = "AD"
 func main() {
 	year := 2016
 	month := rand.Intn(12) + 1
-	days := 31
+	daysInMonth := 31
 
 	switch month {
 	case 2:
-		days = 29
+		daysInMonth = 29
 	case 4, 6, 9, 11:
-		days = 30
+		daysInMonth = 30
 	}
 
-	day := rand.Intn(days) + 1
+	day := rand.Intn(daysInMonth) + 1
 	fmt.Println(era, year, month, day)
 }
