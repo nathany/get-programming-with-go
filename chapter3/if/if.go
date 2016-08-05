@@ -1,18 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-)
+import "fmt"
 
 func main() {
-	var num = rand.Intn(3)
+	var command = "go east"
 
-	if num == 0 {
-		fmt.Println("Space Adventures")
-	} else if num == 1 {
-		fmt.Println("SpaceX")
+	if command == "go east" {
+		fmt.Println("You head further up the mountain.")
+	} else if command == "go inside" {
+		fmt.Println("You enter the cave where you live out the rest of your life.")
 	} else {
-		fmt.Println("Virgin Galactic")
+		fmt.Println("Didn't quite get that.")
 	}
 }

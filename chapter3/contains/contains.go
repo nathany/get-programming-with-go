@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
+	fmt.Println("You find yourself in a dimly lit cavern.")
+
 	var command = "walk outside"
 	var exit = strings.Contains(command, "outside")
 
-	fmt.Println("Walk outside the cave?", exit)
+	fmt.Println("You leave the cave:", exit)
 }
