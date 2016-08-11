@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// a random speed from 16-30 km/s
-	var speed = rand.Intn(15) + 16
-	fmt.Println(speed)
+	// a random distance to Mars (km)
+	var distance = rand.Intn(346000000) + 56000000
+	fmt.Println(distance)
 }

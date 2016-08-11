@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+// Kelvin temperature
 type Kelvin float64
+
+// Sensor function type
 type Sensor func() Kelvin
 
 func realSensor() Kelvin {
