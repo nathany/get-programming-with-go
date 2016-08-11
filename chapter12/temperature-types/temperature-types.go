@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+// Celsius temperature
 type Celsius float64
+
+// Kelvin temperature
 type Kelvin float64
 
 // KelvinToCelsius converts ºK to ºC

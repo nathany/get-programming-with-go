@@ -11,6 +11,6 @@ func main() {
 	if leap {
 		fmt.Println("Look before you leap!")
 	} else {
-		fmt.Println("Stay put.")
+		fmt.Println("Keep your feet on the ground.")
 	}
 }

@@ -5,6 +5,7 @@ import (
 	"math/rand"
 )
 
+// Kelvin temperature
 type Kelvin float64
 
 func fakeSensor() Kelvin {

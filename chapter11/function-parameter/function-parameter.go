@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// Kelvin temperature
 type Kelvin float64
 
 func measureTemperature(samples int, sensor func() Kelvin) {

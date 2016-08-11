@@ -12,6 +12,6 @@ func main() {
 		fmt.Println("The ice seems solid enough.")
 		fallthrough
 	case room == "underwater":
-		fmt.Println("The water is freezing.")
+		fmt.Println("The water is freezing cold.")
 	}
 }
