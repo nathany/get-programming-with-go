@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	type point struct {
+	type location struct {
 		lat  float64
 		long float64
 	}
-	bradbury := point{-4.5895, 137.4417}
+	bradbury := location{-4.5895, 137.4417}
 	curiosity := bradbury
 
 	curiosity.long += 0.0106

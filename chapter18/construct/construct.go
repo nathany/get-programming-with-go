@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-// point with a latitude, longitude.
-type point struct {
+// location with a latitude, longitude.
+type location struct {
 	lat, long float64
 }
 
@@ -13,9 +13,9 @@ type coordinate struct {
 	h       rune
 }
 
-// newPoint from latitude, longitude d/m/s coordinates.
-func newPoint(lat, long coordinate) point {
-	return point{lat.decimal(), long.decimal()}
+// newLocation from latitude, longitude d/m/s coordinates.
+func newLocation(lat, long coordinate) location {
+	return location{lat.decimal(), long.decimal()}
 }
 
 // decimal converts a d/m/s coordinate to decimal degrees.
@@ -29,6 +29,6 @@ func (c coordinate) decimal() float64 {
 }
 
 func main() {
-	curiosity := newPoint(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
+	curiosity := newLocation(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
 	fmt.Println(curiosity)
 }

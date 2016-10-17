@@ -19,30 +19,30 @@ func main() {
 	var board [8][8]rune
 
 	// black pieces
-	board[0][0] = '♜'
-	board[0][1] = '♞'
-	board[0][2] = '♝'
-	board[0][3] = '♛'
-	board[0][4] = '♚'
-	board[0][5] = '♝'
-	board[0][6] = '♞'
-	board[0][7] = '♜'
+	board[0][0] = 'r'
+	board[0][1] = 'n'
+	board[0][2] = 'b'
+	board[0][3] = 'q'
+	board[0][4] = 'k'
+	board[0][5] = 'b'
+	board[0][6] = 'n'
+	board[0][7] = 'r'
 
 	// pawns
 	for column := range board[1] {
-		board[1][column] = '♟'
-		board[6][column] = '♙'
+		board[1][column] = 'p'
+		board[6][column] = 'P'
 	}
 
 	// white pieces
-	board[7][0] = '♖'
-	board[7][1] = '♘'
-	board[7][2] = '♗'
-	board[7][3] = '♕'
-	board[7][4] = '♔'
-	board[7][5] = '♗'
-	board[7][6] = '♘'
-	board[7][7] = '♖'
+	board[7][0] = 'R'
+	board[7][1] = 'N'
+	board[7][2] = 'B'
+	board[7][3] = 'Q'
+	board[7][4] = 'K'
+	board[7][5] = 'B'
+	board[7][6] = 'N'
+	board[7][7] = 'R'
 
 	display(board)
 }
