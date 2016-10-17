@@ -9,7 +9,7 @@ func main() {
 	}
 
 	planetsMarkII := planets
-	planets["Earth"] = "💥"
+	planets["Earth"] = "whoops"
 
 	fmt.Println(planets)
 	fmt.Println(planetsMarkII)

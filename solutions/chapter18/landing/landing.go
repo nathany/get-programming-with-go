@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-// point with a latitude, longitude.
-type point struct {
+// location with a latitude, longitude.
+type location struct {
 	lat, long float64
 }
 
@@ -13,9 +13,9 @@ type coordinate struct {
 	h       rune
 }
 
-// newPoint from latitude, longitude d/m/s coordinates.
-func newPoint(lat, long coordinate) point {
-	return point{lat.decimal(), long.decimal()}
+// newLocation from latitude, longitude d/m/s coordinates.
+func newLocation(lat, long coordinate) location {
+	return location{lat.decimal(), long.decimal()}
 }
 
 // decimal converts a d/m/s coordinate to decimal degrees.
@@ -29,10 +29,10 @@ func (c coordinate) decimal() float64 {
 }
 
 func main() {
-	spirit := newPoint(coordinate{14, 34, 6.2, 'S'}, coordinate{175, 28, 21.5, 'E'})
-	opportunity := newPoint(coordinate{1, 56, 46.3, 'S'}, coordinate{354, 28, 24.2, 'E'})
-	curiosity := newPoint(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
-	insight := newPoint(coordinate{3, 0, 0.0, 'N'}, coordinate{154, 41, 60.0, 'E'})
+	spirit := newLocation(coordinate{14, 34, 6.2, 'S'}, coordinate{175, 28, 21.5, 'E'})
+	opportunity := newLocation(coordinate{1, 56, 46.3, 'S'}, coordinate{354, 28, 24.2, 'E'})
+	curiosity := newLocation(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
+	insight := newLocation(coordinate{3, 0, 0.0, 'N'}, coordinate{154, 41, 60.0, 'E'})
 
 	fmt.Println("Spirit", spirit)
 	fmt.Println("Opportunity", opportunity)

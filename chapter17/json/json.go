@@ -7,11 +7,11 @@ import (
 )
 
 func main() {
-	type point struct {
+	type location struct {
 		Lat, Long float64
 	}
 
-	curiosity := point{-4.5895, 137.4417}
+	curiosity := location{-4.5895, 137.4417}
 
 	bytes, err := json.Marshal(curiosity)
 	exitOnError(err)
