@@ -1,13 +1,13 @@
 # Get Programming with Go
 
-[![Build Status](https://travis-ci.org/nathany/get-programming-with-go.svg?branch=master)](https://travis-ci.org/nathany/get-programming-with-go)
+[![Build Status](https://travis-ci.org/nathany/get-programming-with-go.svg?branch=master)](https://travis-ci.org/nathany/get-programming-with-go).
 
 Available from Manning Publications [https://www.manning.com/books/get-programming-with-go](https://manning.com/books/get-programming-with-go?a_aid=nathany&a_bid=53f68821).
 
-Try out these examples in [The Go Playground](https://play.golang.org/).
+Try out these examples in The Go Playground: https://play.golang.org
 
-If you downloaded this code from the Manning website, you can browse the latest version online at: https://github.com/nathany/get-programming-with-go
+If you downloaded this code from the Manning website, you can browse the latest version online at: https://github.com/nathany/get-programming-with-go.
 
 ### Contributing
 
-Feel free to open an issue or ask questions on the Manning Forums https://forums.manning.com/forums/get-programming-with-go.
+Feel free to open an issue or ask questions on the Manning Forums: https://forums.manning.com/forums/get-programming-with-go.
