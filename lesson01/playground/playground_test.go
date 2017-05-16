@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/nathany/learn-go/cmd"
+	"github.com/nathany/get-programming-with-go/cmd"
 )
 
 func TestPlayground(t *testing.T) {
