@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("There is a sign here that reads 'No Minors'.")
+	fmt.Println("There is a sign near the entrance that reads 'No Minors'.")
 
 	var age = 40
 	var minor = age < 18
