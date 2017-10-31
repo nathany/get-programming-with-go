@@ -1,6 +1,6 @@
 # Get Programming with Go
 
-[![Build Status](https://travis-ci.org/nathany/get-programming-with-go.svg?branch=master)](https://travis-ci.org/nathany/get-programming-with-go)
+[![CircleCI](https://circleci.com/gh/nathany/get-programming-with-go.svg?style=svg)](https://circleci.com/gh/nathany/get-programming-with-go)
 
 Available from Manning Publications [https://www.manning.com/books/get-programming-with-go](https://manning.com/books/get-programming-with-go?a_aid=nathany&a_bid=53f68821).
 
