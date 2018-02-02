@@ -21,21 +21,21 @@ func (c *character) pickup(i *item) {
 	c.leftHand = i
 }
 
-func (c *character) giveTo(recipient *character) {
-	if c == nil || recipient == nil {
+func (c *character) give(to *character) {
+	if c == nil || to == nil {
 		return
 	}
 	if c.leftHand == nil {
 		fmt.Printf("%v has nothing to give\n", c.name)
 		return
 	}
-	if recipient.leftHand != nil {
-		fmt.Printf("%v's hands are full\n", recipient.name)
+	if to.leftHand != nil {
+		fmt.Printf("%v's hands are full\n", to.name)
 		return
 	}
-	recipient.leftHand = c.leftHand
+	to.leftHand = c.leftHand
 	c.leftHand = nil
-	fmt.Printf("%v's gives %v a %v\n", c.name, recipient.name, recipient.leftHand.name)
+	fmt.Printf("%v's gives %v a %v\n", c.name, to.name, to.leftHand.name)
 }
 
 func (c character) String() string {
@@ -52,7 +52,7 @@ func main() {
 	arthur.pickup(shrubbery)
 
 	knight := &character{name: "Knight"}
-	arthur.giveTo(knight)
+	arthur.give(knight)
 
 	fmt.Println(arthur)
 	fmt.Println(knight)
