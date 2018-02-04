@@ -7,6 +7,6 @@ import (
 
 func main() {
 	// a random distance to Mars (km)
-	var distance = rand.Intn(346000000) + 56000000
+	var distance = rand.Intn(345000001) + 56000000
 	fmt.Println(distance)
 }
