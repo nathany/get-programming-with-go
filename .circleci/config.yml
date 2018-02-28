@@ -2,16 +2,20 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.9
+      - image: circleci/golang:1.10
     working_directory: /go/src/github.com/nathany/get-programming-with-go
     steps:
       - checkout
       - run:
           name: Lint
           command: |
-            go get -u github.com/golang/lint/golint
-            test -z "$(golint ./... | tee /dev/stderr)"
+            go get -u golang.org/x/lint/golint
+            golint ./...
+      - run:
+          name: Vet
+          command: |
             go vet ./...
       - run:
           name: Test
-          command: go test -race ./...
+          command: |
+            go test -race ./...
