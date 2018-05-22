@@ -8,13 +8,13 @@ import (
 var era = "AD"
 
 func main() {
-	year := 2016
+	year := 2018
 	month := rand.Intn(12) + 1
 	daysInMonth := 31
 
 	switch month {
 	case 2:
-		daysInMonth = 29
+		daysInMonth = 28
 	case 4, 6, 9, 11:
 		daysInMonth = 30
 	}

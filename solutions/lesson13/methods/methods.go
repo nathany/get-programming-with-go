@@ -2,47 +2,47 @@ package main
 
 import "fmt"
 
-// Celsius temperatures
-type Celsius float64
+// celsius temperatures
+type celsius float64
 
-// Fahrenheit converts ºC to ºF
-func (c Celsius) Fahrenheit() Fahrenheit {
-	return Fahrenheit((c * 9.0 / 5.0) + 32.0)
+// fahrenheit converts ºC to ºF
+func (c celsius) fahrenheit() fahrenheit {
+	return fahrenheit((c * 9.0 / 5.0) + 32.0)
 }
 
-// Kelvin converts ºC to ºK
-func (c Celsius) Kelvin() Kelvin {
-	return Kelvin(c + 273.15)
+// kelvin converts ºC to ºK
+func (c celsius) kelvin() kelvin {
+	return kelvin(c + 273.15)
 }
 
-// Fahrenheit temperatures
-type Fahrenheit float64
+// fahrenheit temperatures
+type fahrenheit float64
 
-// Celsius converts ºF to ºC
-func (f Fahrenheit) Celsius() Celsius {
-	return Celsius((f - 32.0) * 5.0 / 9.0)
+// celsius converts ºF to ºC
+func (f fahrenheit) celsius() celsius {
+	return celsius((f - 32.0) * 5.0 / 9.0)
 }
 
-// Kelvin converts ºF to ºK
-func (f Fahrenheit) Kelvin() Kelvin {
-	return f.Celsius().Kelvin()
+// kelvin converts ºF to ºK
+func (f fahrenheit) kelvin() kelvin {
+	return f.celsius().kelvin()
 }
 
-// Kelvin temperatures
-type Kelvin float64
+// kelvin temperatures
+type kelvin float64
 
-// Celsius converts ºK to ºC
-func (k Kelvin) Celsius() Celsius {
-	return Celsius(k - 273.15)
+// celsius converts ºK to ºC
+func (k kelvin) celsius() celsius {
+	return celsius(k - 273.15)
 }
 
-// Fahrenheit converts ºK to ºF
-func (k Kelvin) Fahrenheit() Fahrenheit {
-	return k.Celsius().Fahrenheit()
+// fahrenheit converts ºK to ºF
+func (k kelvin) fahrenheit() fahrenheit {
+	return k.celsius().fahrenheit()
 }
 
 func main() {
-	var k Kelvin = 294.0
-	c := k.Celsius()
+	var k kelvin = 294.0
+	c := k.celsius()
 	fmt.Print(k, "ºK is ", c, "ºC")
 }

@@ -9,16 +9,12 @@ func main() {
 		c := message[i]
 		if c >= 'a' && c <= 'z' {
 			c -= 3
-			if c > 'z' {
-				c -= 26
-			} else if c < 'a' {
+			if c < 'a' {
 				c += 26
 			}
 		} else if c >= 'A' && c <= 'Z' {
 			c -= 3
-			if c > 'Z' {
-				c -= 26
-			} else if c < 'A' {
+			if c < 'A' {
 				c += 26
 			}
 		}

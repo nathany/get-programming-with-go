@@ -7,7 +7,7 @@ func main() {
 	tune := neptune[3:]
 
 	fmt.Println(tune)
-	neptune = "icecream"
+	neptune = "Poseidon"
 	fmt.Println(tune)
 
 	// neptune[0] = 'H' // cannot assign to neptune[0]

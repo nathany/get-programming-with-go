@@ -15,6 +15,7 @@ func main() {
 
 	terrestrial := planets[0:4:4]
 	worlds := append(terrestrial, "Ceres")
+
 	fmt.Println(planets)
 
 	dump("terrestrial", terrestrial)

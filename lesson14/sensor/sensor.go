@@ -5,14 +5,13 @@ import (
 	"math/rand"
 )
 
-// Kelvin temperature
-type Kelvin float64
+type kelvin float64
 
-func fakeSensor() Kelvin {
-	return Kelvin(rand.Intn(151) + 150)
+func fakeSensor() kelvin {
+	return kelvin(rand.Intn(151) + 150)
 }
 
-func realSensor() Kelvin {
+func realSensor() kelvin {
 	return 0
 }
 

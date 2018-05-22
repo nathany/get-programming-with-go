@@ -15,7 +15,6 @@ func main() {
 	var opportunity location
 	opportunity.lat = -1.9462
 	opportunity.long = 354.4734
-
 	var curiosity location
 	curiosity.lat = -4.5895
 	curiosity.long = 137.4417

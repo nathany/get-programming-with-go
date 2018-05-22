@@ -1,0 +1,35 @@
+package main
+
+import (
+	"fmt"
+)
+
+// coordinate in degrees, minutes, seconds in a N/S/E/W hemisphere.
+type coordinate struct {
+	d, m, s float64
+	h       rune
+}
+
+// String formats a DMS coordinate.
+func (c coordinate) String() string {
+	return fmt.Sprintf("%vº%v'%.1f\" %c", c.d, c.m, c.s, c.h)
+}
+
+// location with a latitude, longitude in decimal degrees.
+type location struct {
+	lat, long coordinate
+}
+
+// String formats a location with latitude, longitude.
+func (l location) String() string {
+	return fmt.Sprintf("%v, %v", l.lat, l.long)
+}
+
+func main() {
+	elysium := location{
+		lat:  coordinate{3, 0, 0.0, 'N'},
+		long: coordinate{154, 41, 60.0, 'E'},
+	}
+
+	fmt.Println("Elysium Planitia is at", elysium)
+}

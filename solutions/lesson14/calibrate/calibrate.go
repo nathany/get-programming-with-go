@@ -5,28 +5,25 @@ import (
 	"math/rand"
 )
 
-// Kelvin temperature
-type Kelvin float64
+type kelvin float64
+type sensor func() kelvin
 
-// Sensor function type
-type Sensor func() Kelvin
-
-func realSensor() Kelvin {
+func realsensor() kelvin {
 	return 0
 }
 
-func fakeSensor() Kelvin {
-	return Kelvin(rand.Intn(151) + 150)
+func fakeSensor() kelvin {
+	return kelvin(rand.Intn(151) + 150)
 }
 
-func calibrate(sensor Sensor, offset Kelvin) Sensor {
-	return func() Kelvin {
-		return sensor() + offset
+func calibrate(s sensor, offset kelvin) sensor {
+	return func() kelvin {
+		return s() + offset
 	}
 }
 
 func main() {
-	var offset Kelvin = 5
+	var offset kelvin = 5
 	sensor := calibrate(fakeSensor, offset)
 
 	for count := 0; count < 10; count++ {

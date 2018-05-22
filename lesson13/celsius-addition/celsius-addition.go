@@ -1,10 +1,10 @@
 package main
 
 func main() {
-	type Celsius float64
+	type celsius float64
 
 	const degrees = 20
-	var temperature Celsius = degrees
+	var temperature celsius = degrees
 
 	temperature += 10
 }

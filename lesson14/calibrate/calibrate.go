@@ -2,19 +2,18 @@ package main
 
 import "fmt"
 
-// Kelvin temperature
-type Kelvin float64
+type kelvin float64
 
-// Sensor function type
-type Sensor func() Kelvin
+// sensor function type
+type sensor func() kelvin
 
-func realSensor() Kelvin {
+func realSensor() kelvin {
 	return 0
 }
 
-func calibrate(sensor Sensor, offset Kelvin) Sensor {
-	return func() Kelvin {
-		return sensor() + offset
+func calibrate(s sensor, offset kelvin) sensor {
+	return func() kelvin {
+		return s() + offset
 	}
 }
 

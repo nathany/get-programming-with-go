@@ -9,7 +9,7 @@ var era = "AD"
 
 func main() {
 	for count := 0; count < 10; count++ {
-		year := 2016 + rand.Intn(10)
+		year := 2018 + rand.Intn(10)
 		leap := year%400 == 0 || (year%4 == 0 && year%100 != 0)
 		month := rand.Intn(12) + 1
 

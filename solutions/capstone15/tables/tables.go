@@ -5,19 +5,19 @@ import (
 )
 
 // Celsius temperatures
-type Celsius float64
+type celsius float64
 
 // Fahrenheit converts ºC to ºF.
-func (c Celsius) Fahrenheit() Fahrenheit {
-	return Fahrenheit((c * 9.0 / 5.0) + 32.0)
+func (c celsius) fahrenheit() fahrenheit {
+	return fahrenheit((c * 9.0 / 5.0) + 32.0)
 }
 
 // Fahrenheit temperatures
-type Fahrenheit float64
+type fahrenheit float64
 
 // Celsius converts ºF to ºC.
-func (f Fahrenheit) Celsius() Celsius {
-	return Celsius((f - 32.0) * 5.0 / 9.0)
+func (f fahrenheit) celsius() celsius {
+	return celsius((f - 32.0) * 5.0 / 9.0)
 }
 
 const (
@@ -41,16 +41,16 @@ func drawTable(hdr1, hdr2 string, rows int, getRow getRowFn) {
 }
 
 func ctof(row int) (string, string) {
-	c := Celsius(row*5 - 40)
-	f := c.Fahrenheit()
+	c := celsius(row*5 - 40)
+	f := c.fahrenheit()
 	cell1 := fmt.Sprintf(numberFormat, c)
 	cell2 := fmt.Sprintf(numberFormat, f)
 	return cell1, cell2
 }
 
 func ftoc(row int) (string, string) {
-	f := Fahrenheit(row*5 - 40)
-	c := f.Celsius()
+	f := fahrenheit(row*5 - 40)
+	c := f.celsius()
 	cell1 := fmt.Sprintf(numberFormat, f)
 	cell2 := fmt.Sprintf(numberFormat, c)
 	return cell1, cell2

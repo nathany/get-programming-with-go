@@ -14,21 +14,19 @@ func shout(t talker) {
 	fmt.Println(louder)
 }
 
-type rover string
-
-func (r rover) talk() string {
-	return string(r)
-}
-
 type laser int
 
 func (l laser) talk() string {
 	return strings.Repeat("toot ", int(l))
 }
 
+type rover string
+
+func (r rover) talk() string {
+	return string(r)
+}
+
 func main() {
 	r := rover("whir whir")
 	shout(r)
-
-	shout(laser(2))
 }

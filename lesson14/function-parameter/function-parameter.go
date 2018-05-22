@@ -6,10 +6,9 @@ import (
 	"time"
 )
 
-// Kelvin temperature
-type Kelvin float64
+type kelvin float64
 
-func measureTemperature(samples int, sensor func() Kelvin) {
+func measureTemperature(samples int, sensor func() kelvin) {
 	for i := 0; i < samples; i++ {
 		k := sensor()
 		fmt.Printf("%vºK\n", k)
@@ -17,8 +16,8 @@ func measureTemperature(samples int, sensor func() Kelvin) {
 	}
 }
 
-func fakeSensor() Kelvin {
-	return Kelvin(rand.Intn(151) + 150)
+func fakeSensor() kelvin {
+	return kelvin(rand.Intn(151) + 150)
 }
 
 func main() {

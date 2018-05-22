@@ -25,7 +25,7 @@ func main() {
 	ice := giants[2:4]
 	fmt.Println(giants, gas, ice)
 	iceGiantsMarkII := iceGiants
-	iceGiants[1] = "icecream"
+	iceGiants[1] = "Poseidon"
 	fmt.Println(planets)
 	fmt.Println(iceGiants, iceGiantsMarkII, ice)
 }

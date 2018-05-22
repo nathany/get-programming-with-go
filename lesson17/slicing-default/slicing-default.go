@@ -21,4 +21,7 @@ func main() {
 	allPlanets := planets[:]
 
 	fmt.Println(allPlanets)
+	colonized := terrestrial[2:]
+
+	fmt.Println(colonized)
 }

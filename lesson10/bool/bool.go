@@ -3,18 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	yesNo := "1"
+	launch := true
 
-	var launch bool
-
-	switch yesNo {
-	case "true", "yes", "1":
-		launch = true
-	case "false", "no", "0":
-		launch = false
-	default:
-		fmt.Println(yesNo, "is not valid")
+	var oneZero int
+	if launch {
+		oneZero = 1
+	} else {
+		oneZero = 0
 	}
-
-	fmt.Println("Ready for launch:", launch)
+	fmt.Println("Ready for launch:", oneZero)
 }

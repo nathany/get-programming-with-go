@@ -11,7 +11,6 @@ func main() {
 	var number int8 = 127
 	number += 3
 	fmt.Println(number)
-
 	// wrap the other way
 	red = 0
 	red--
@@ -20,7 +19,6 @@ func main() {
 	number = -128
 	number--
 	fmt.Println(number)
-
 	// wrapping with a 16-bit unsigned integer
 	var green uint16 = 65535
 	green++

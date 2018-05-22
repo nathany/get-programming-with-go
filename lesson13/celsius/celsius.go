@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	type Celsius float64
+	type celsius float64
 
-	var temperature Celsius = 20
+	var temperature celsius = 20
 
 	fmt.Println(temperature)
 }
