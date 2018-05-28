@@ -8,7 +8,7 @@ import (
 const secondsPerDay = 86400
 
 func main() {
-	distance := 57600000
+	distance := 62100000
 	company := ""
 	trip := ""
 
