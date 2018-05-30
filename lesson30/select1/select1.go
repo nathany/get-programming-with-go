@@ -8,21 +8,21 @@ import (
 
 func main() {
 	c := make(chan int)
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		go sleepyGopher(i, c)
 	}
 	timeout := time.After(2 * time.Second)
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 5; i++ {
 		select {
-		case whichGopher := <-c:
-			fmt.Println("gopher ", whichGopher, " has finished sleeping")
+		case gopherID := <-c:
+			fmt.Println("gopher ", gopherID, " has finished sleeping")
 		case <-timeout:
 			fmt.Println("my patience ran out")
 			return
 		}
 	}
 }
-func sleepyGopher(whichGopher int, c chan int) {
+func sleepyGopher(id int, c chan int) {
 	time.Sleep(time.Duration(rand.Intn(4000)) * time.Millisecond)
-	c <- whichGopher
+	c <- id
 }
