@@ -12,5 +12,5 @@ func celsiusToKelvin(c celsius) kelvin {
 func main() {
 	var c celsius = 127.0
 	k := celsiusToKelvin(c)
-	fmt.Print(c, "ºC is ", k, "ºK")
+	fmt.Print(c, "º C is ", k, "º K")
 }

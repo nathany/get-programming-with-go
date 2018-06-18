@@ -18,6 +18,6 @@ func kelvinToFahrenheit(k float64) float64 {
 }
 
 func main() {
-	fmt.Printf("233ºK is %.2fºC\n", kelvinToCelsius(233))
-	fmt.Printf("0ºK is %.2fºF\n", kelvinToFahrenheit(0))
+	fmt.Printf("233º K is %.2fº C\n", kelvinToCelsius(233))
+	fmt.Printf("0º K is %.2fº F\n", kelvinToFahrenheit(0))
 }

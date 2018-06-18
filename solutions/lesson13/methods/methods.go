@@ -44,5 +44,5 @@ func (k kelvin) fahrenheit() fahrenheit {
 func main() {
 	var k kelvin = 294.0
 	c := k.celsius()
-	fmt.Print(k, "ºK is ", c, "ºC")
+	fmt.Print(k, "º K is ", c, "º C")
 }

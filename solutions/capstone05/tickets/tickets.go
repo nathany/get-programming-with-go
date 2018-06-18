@@ -12,7 +12,7 @@ func main() {
 	company := ""
 	trip := ""
 
-	fmt.Println("Spaceline        Days Round-trip Price")
+	fmt.Println("Spaceline        Days Trip type  Price")
 	fmt.Println("======================================")
 
 	for count := 0; count < 10; count++ {

@@ -24,7 +24,7 @@ func main() {
 		same resilient weed which was the first thing his hands had touched in
 		Malacandra. Once or twice a small red creature scuttled across his
 		path, but otherwise there seemed to be no life stirring in the wood;
-		nothing to fear — except the fact of wandering unprovisioned and alone
+		nothing to fear —- except the fact of wandering unprovisioned and alone
 		in a forest of unknown vegetation thousands or millions of miles
 		beyond the reach or knowledge of man.`
 

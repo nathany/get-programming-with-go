@@ -9,7 +9,7 @@ func main() {
 	}
 
 	temp := temperature["Earth"]
-	fmt.Printf("On average the Earth is %vºC.\n", temp)
+	fmt.Printf("On average the Earth is %vº C.\n", temp)
 
 	temperature["Earth"] = 16
 	temperature["Venus"] = 464
@@ -18,7 +18,7 @@ func main() {
 	moon := temperature["Moon"]
 	fmt.Println(moon)
 	if moon, ok := temperature["Moon"]; ok {
-		fmt.Printf("On average the moon is %vºC.\n", moon)
+		fmt.Printf("On average the moon is %vº C.\n", moon)
 	} else {
 		fmt.Println("Where is the moon?")
 	}

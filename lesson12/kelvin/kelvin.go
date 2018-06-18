@@ -11,5 +11,5 @@ func kelvinToCelsius(k float64) float64 {
 func main() {
 	kelvin := 294.0
 	celsius := kelvinToCelsius(kelvin)
-	fmt.Print(kelvin, "ºK is ", celsius, "ºC")
+	fmt.Print(kelvin, "º K is ", celsius, "º C")
 }
