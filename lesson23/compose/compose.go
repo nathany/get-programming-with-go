@@ -25,5 +25,5 @@ func main() {
 
 	fmt.Printf("%+v\n", report)
 
-	fmt.Printf("a balmy %vºC\n", report.temperature.high)
+	fmt.Printf("a balmy %vº C\n", report.temperature.high)
 }

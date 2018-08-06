@@ -67,7 +67,7 @@ func (r *RoverDriver) drive() {
 	}
 }
 
-// Left turns the rover left (90° anticlockwise).
+// Left turns the rover left (90° counterclockwise).
 func (r *RoverDriver) Left() {
 	r.commandc <- left
 }

@@ -11,7 +11,7 @@ type kelvin float64
 func measureTemperature(samples int, sensor func() kelvin) {
 	for i := 0; i < samples; i++ {
 		k := sensor()
-		fmt.Printf("%vºK\n", k)
+		fmt.Printf("%vº K\n", k)
 		time.Sleep(time.Second)
 	}
 }

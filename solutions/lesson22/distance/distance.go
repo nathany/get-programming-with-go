@@ -58,7 +58,7 @@ func main() {
 	spirit := newLocation(coordinate{14, 34, 6.2, 'S'}, coordinate{175, 28, 21.5, 'E'})
 	opportunity := newLocation(coordinate{1, 56, 46.3, 'S'}, coordinate{354, 28, 24.2, 'E'})
 	curiosity := newLocation(coordinate{4, 35, 22.2, 'S'}, coordinate{137, 26, 30.12, 'E'})
-	insight := newLocation(coordinate{3, 0, 0.0, 'N'}, coordinate{154, 41, 60.0, 'E'})
+	insight := newLocation(coordinate{4, 30, 0.0, 'N'}, coordinate{135, 54, 0, 'E'})
 
 	fmt.Printf("Spirit to Opportunity %.2f km\n", mars.distance(spirit, opportunity))
 	fmt.Printf("Spirit to Curiosity %.2f km\n", mars.distance(spirit, curiosity))
