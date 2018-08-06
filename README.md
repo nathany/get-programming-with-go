@@ -12,4 +12,4 @@ If you downloaded this code from the Manning website, you can browse the latest 
 
 Feel free to open an issue or ask questions on the Manning Forums: https://forums.manning.com/forums/get-programming-with-go.
 
-[![Become a Patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=12665451)
+[![Become a Patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/nathany)
