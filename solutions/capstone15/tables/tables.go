@@ -4,18 +4,14 @@ import (
 	"fmt"
 )
 
-// Celsius temperatures
 type celsius float64
 
-// Fahrenheit converts ºC to ºF.
 func (c celsius) fahrenheit() fahrenheit {
 	return fahrenheit((c * 9.0 / 5.0) + 32.0)
 }
 
-// Fahrenheit temperatures
 type fahrenheit float64
 
-// Celsius converts ºF to ºC.
 func (f fahrenheit) celsius() celsius {
 	return celsius((f - 32.0) * 5.0 / 9.0)
 }

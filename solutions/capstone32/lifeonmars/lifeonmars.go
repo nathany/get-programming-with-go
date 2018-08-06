@@ -32,7 +32,7 @@ type Message struct {
 const (
 	// The length of a Mars day.
 	dayLength = 24 * time.Second
-	// The length of time per day during which we
+	// The length of time per day during which
 	// messages can be transmitted from a rover to Earth.
 	receiveTimePerDay = 2 * time.Second
 )
@@ -206,7 +206,7 @@ func (r *RoverDriver) checkForLife() {
 	})
 }
 
-// Left turns the rover left (90° anticlockwise).
+// Left turns the rover left (90° counterclockwise).
 func (r *RoverDriver) Left() {
 	r.commandc <- left
 }
@@ -225,7 +225,7 @@ type MarsGrid struct {
 	cells  [][]cell
 }
 
-// SensorData holds information about whats in
+// SensorData holds information about what's in
 // a point in the grid.
 type SensorData struct {
 	LifeSigns int
@@ -261,7 +261,7 @@ func (g *MarsGrid) Size() image.Point {
 }
 
 // Occupy occupies a cell at the given point in the grid. It
-// returns nil if the point is already or the point is outside
+// returns nil if the point is already occupied or the point is outside
 // the grid. Otherwise it returns a value that can be used
 // to move to different places on the grid.
 func (g *MarsGrid) Occupy(p image.Point) *Occupier {

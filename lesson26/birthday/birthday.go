@@ -14,8 +14,8 @@ func birthday(p *person) {
 func main() {
 	rebecca := person{
 		name:       "Rebecca",
-		age:        14,
 		superpower: "imagination",
+		age:        14,
 	}
 
 	birthday(&rebecca)

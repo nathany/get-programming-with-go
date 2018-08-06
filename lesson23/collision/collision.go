@@ -28,7 +28,7 @@ func (s sol) days(s2 sol) int {
 	return days
 }
 func (l location) days(l2 location) int {
-	// TODO: complicated distance calculation
+	// To-do: complicated distance calculation
 	return 5
 }
 func (r report) days(s2 sol) int {

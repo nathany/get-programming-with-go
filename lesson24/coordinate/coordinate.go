@@ -27,8 +27,8 @@ func (l location) String() string {
 
 func main() {
 	elysium := location{
-		lat:  coordinate{3, 0, 0.0, 'N'},
-		long: coordinate{154, 41, 60.0, 'E'},
+		lat:  coordinate{4, 30, 0.0, 'N'},
+		long: coordinate{135, 54, 0, 'E'},
 	}
 
 	fmt.Println("Elysium Planitia is at", elysium)

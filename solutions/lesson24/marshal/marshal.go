@@ -55,8 +55,8 @@ type location struct {
 func main() {
 	elysium := location{
 		Name: "Elysium Planitia",
-		Lat:  coordinate{3, 0, 0.0, 'N'},
-		Long: coordinate{154, 41, 60.0, 'E'},
+		Lat:  coordinate{4, 30, 0.0, 'N'},
+		Long: coordinate{135, 54, 0, 'E'},
 	}
 
 	bytes, err := json.MarshalIndent(elysium, "", "  ")

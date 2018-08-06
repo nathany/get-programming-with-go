@@ -8,10 +8,6 @@ import (
 type kelvin float64
 type sensor func() kelvin
 
-func realsensor() kelvin {
-	return 0
-}
-
 func fakeSensor() kelvin {
 	return kelvin(rand.Intn(151) + 150)
 }
