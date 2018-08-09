@@ -35,7 +35,7 @@ func (c *character) give(to *character) {
 	}
 	to.leftHand = c.leftHand
 	c.leftHand = nil
-	fmt.Printf("%v's gives %v a %v\n", c.name, to.name, to.leftHand.name)
+	fmt.Printf("%v gives %v a %v\n", c.name, to.name, to.leftHand.name)
 }
 
 func (c character) String() string {
