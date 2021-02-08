@@ -2,7 +2,7 @@
 
 ![Build and Test](https://github.com/nathany/get-programming-with-go/workflows/Build%20and%20Test/badge.svg)
 
-Available from Manning Publications [https://www.manning.com/books/get-programming-with-go](https://manning.com/books/get-programming-with-go?a_aid=nathany&a_bid=53f68821).
+Available from Manning Publications [https://www.manning.com/books/get-programming-with-go](https://www.manning.com/books/get-programming-with-go?utm_source=nathany&utm_medium=affiliate&utm_campaign=book_youngman_get_9_17_18&a_aid=nathany&a_bid=53f68821).
 
 Try out these examples in The Go Playground: https://play.golang.org
 
