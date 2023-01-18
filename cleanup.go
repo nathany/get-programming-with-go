@@ -4,7 +4,6 @@ package main
 
 import (
 	"go/format"
-	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
@@ -23,7 +22,7 @@ func main() {
 	failOnError(err)
 
 	for _, name := range matches {
-		src, err := ioutil.ReadFile(name)
+		src, err := os.ReadFile(name)
 		failOnError(err)
 
 		// remove comments used by AsciiDoctor
@@ -35,7 +34,7 @@ func main() {
 		failOnError(err)
 
 		// write it back out
-		failOnError(ioutil.WriteFile(name, src, 0644))
+		failOnError(os.WriteFile(name, src, 0644))
 	}
 }
 
