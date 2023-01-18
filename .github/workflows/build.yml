@@ -12,10 +12,6 @@ jobs:
         with:
           go-version: 'stable'
           check-latest: true
-      - name: Lint
-        run: |
-          go install golang.org/x/lint/golint
-          golint ./...
       - name: Vet
         run: |
           go vet ./...
