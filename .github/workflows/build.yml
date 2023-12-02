@@ -1,21 +1,29 @@
 name: Build and Test
 
-on: push
+on:
+  push:
+  schedule:
+    - cron: "0 8 * * 6"
 
 jobs:
   build:
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-go@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v4
         with:
           go-version: 'stable'
           check-latest: true
       - name: Vet
         run: |
           go vet ./...
-
       - name: Test
         run: |
           go test -race ./...
+      - name: Staticcheck
+        continue-on-error: true
+        uses: dominikh/staticcheck-action@v1.3.0
+        with:
+          version: 'latest'
+          install-go: false

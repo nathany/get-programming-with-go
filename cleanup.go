@@ -1,5 +1,5 @@
 // Script to remove AsciiDoctor comments from source code listings when brought over
-// from the book. Yes, I did try to figure out sed on OS X first, but this works.
+// from the book.
 package main
 
 import (
