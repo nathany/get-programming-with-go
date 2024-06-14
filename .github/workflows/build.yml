@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v5
         with:
           go-version: 'stable'
           check-latest: true
@@ -23,7 +23,7 @@ jobs:
           go test -race ./...
       - name: Staticcheck
         continue-on-error: true
-        uses: dominikh/staticcheck-action@v1.3.0
+        uses: dominikh/staticcheck-action@v1
         with:
           version: 'latest'
           install-go: false
